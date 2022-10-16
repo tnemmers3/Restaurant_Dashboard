@@ -8,7 +8,7 @@ from bokeh.plotting import figure
 from bokeh.palettes import Greys4, Blues8     #, Category20c
 from bokeh.transform import cumsum
 
-pathName = '/Users/thomasnemmers/Documents/GitHub Portfolio/RMDS Project/sample_dashboard_v2/inputs'
+pathName = 'Restaurant_Dashboard/data'
 fileName = 'Median_Household_Income_(2016).csv'
 
 demo = pd.read_csv(f"{pathName}/{fileName}" , sep = ',' , header = 0)
