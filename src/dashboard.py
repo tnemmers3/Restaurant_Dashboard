@@ -64,6 +64,4 @@ p2 = figure(title = 'Demographic Breakdown' , plot_height = 350 , plot_width = 4
 p2.wedge(x = 0 , y = 1 , radius = 0.25 , start_angle = cumsum('angle' , include_zero = True) , end_angle = cumsum('angle') , \
     line_color = 'white' , fill_color = 'color' , source = demoPieGraph_df , legend_group = 'categories')
 
-# eldersGraph_df.plot_bokeh(kind = 'bar' , stacked = True , colormap = [Greys4[0] , Greys4[2]])
-
 st.bokeh_chart(row(p1 , p2))
